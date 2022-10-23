@@ -1,5 +1,5 @@
-import ReactMarkdown from 'https://esm.sh/react-markdown@7?bundle'
-import remarkGfm from 'https://cdn.skypack.dev/remark-gfm@3?dts'
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import remarkGfm from 'remark-gfm'
 
 import { PreviewContainer, PreviewHeader } from "./styles";
 
