@@ -13,7 +13,7 @@ export function App() {
 
   return (
     <div>
-      <Header />
+      <Header textareaValue={textareaValue} />
       <main className='main'>
         <Markdown textareaValue={textareaValue} setTextareaValue={setTextareaValue} />
         <Preview textareaValue={textareaValue} />

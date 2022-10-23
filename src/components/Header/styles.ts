@@ -42,7 +42,7 @@ export const Line = styled.div`
   height: 30px;
 `
 
-export const DownloadButton = styled.button`
+export const DownloadButton = styled.a`
   width: 8.5rem;
   display: flex;
   align-items: flex-end;

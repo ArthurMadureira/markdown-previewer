@@ -1,16 +1,20 @@
 import { DownloadButton, HeaderContainer, Line } from "./styles";
 import { DownloadSimple } from 'phosphor-react'
 
-export function Header() {
+interface HeaderProps {
+  textareaValue: string
+}
+
+export function Header({ textareaValue }: HeaderProps) {
   return (
     <HeaderContainer>
       <div>
-        <h1>Mardown</h1>
+        <h1>Markdown</h1>
         <Line />
         <input type="text" placeholder='README.md' />
       </div>
 
-      <DownloadButton>
+      <DownloadButton href={`${textareaValue}.md`} download={'README.md'} target="_blank">
         <DownloadSimple size={22} />
         Download
       </DownloadButton>
