@@ -1,11 +1,15 @@
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-import remarkGfm from 'remark-gfm'
+
+import Markdown from 'marked-react';
+
+
 
 import { PreviewContainer, PreviewHeader } from "./styles";
-
+import { MarkdownBody } from '../../layout/markdownStyles'
 interface PreviewProps {
   textareaValue: string
 }
+
+
 
 export function Preview({ textareaValue }: PreviewProps) {
 
@@ -15,7 +19,13 @@ export function Preview({ textareaValue }: PreviewProps) {
         <h2>Preview</h2>
       </PreviewHeader>
 
-      <ReactMarkdown className='previewer' remarkPlugins={[remarkGfm]}>{textareaValue}</ReactMarkdown>
+      <MarkdownBody>
+        <div className="markdown-body">
+
+          <Markdown value={textareaValue} />
+        </div>
+      </MarkdownBody>
+
     </PreviewContainer>
   )
 }

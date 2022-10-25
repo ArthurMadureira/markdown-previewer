@@ -4,7 +4,7 @@ export const PreviewContainer = styled.div`
   padding-left: 2rem;
 
   .previewer {
-    line-height: 2.8rem;
+    /* line-height: 2.8rem; */
     max-width: 100%;
     text-align: left;
   }
@@ -20,3 +20,4 @@ export const PreviewHeader = styled.header`
     font-weight: 500;
   }
 `
+
