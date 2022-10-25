@@ -1,7 +1,7 @@
 # Markdown Previewer
 ----
 
-<img src="./.github/layout.jpg">
+<img src="./.github/layout.png">
 
 ## Techs:
 
