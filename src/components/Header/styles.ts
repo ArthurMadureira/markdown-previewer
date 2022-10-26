@@ -55,6 +55,8 @@ export const DownloadButton = styled.a`
 
   padding: 0.8rem;
 
+  text-decoration: none;
+
   transition: filter .2s;
   cursor: pointer;
 
