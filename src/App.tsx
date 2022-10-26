@@ -11,11 +11,14 @@ export function App() {
 
   const [textareaValue, setTextareaValue] = useState('')
 
+  const item = localStorage.getItem('@textarea-value')
+
+
   return (
     <div>
       <Header textareaValue={textareaValue} />
       <main className='main'>
-        <Markdown textareaValue={textareaValue} setTextareaValue={setTextareaValue} />
+        <Markdown textareaValue={textareaValue} setTextareaValue={setTextareaValue} item={item} />
         <Preview textareaValue={textareaValue} />
       </main>
       <GlobalStyle />

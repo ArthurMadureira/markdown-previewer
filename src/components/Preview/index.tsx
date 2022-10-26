@@ -1,7 +1,4 @@
-
 import Markdown from 'marked-react';
-
-
 
 import { PreviewContainer, PreviewHeader } from "./styles";
 import { MarkdownBody } from '../../layout/markdownStyles'

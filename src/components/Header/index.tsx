@@ -14,7 +14,7 @@ export function Header({ textareaValue }: HeaderProps) {
         <input type="text" placeholder='README.md' />
       </div>
 
-      <DownloadButton href={`${textareaValue}.md`} download={'README.md'} target="_blank">
+      <DownloadButton href={textareaValue + ".md"} download target="_blank">
         <DownloadSimple size={22} />
         Download
       </DownloadButton>
