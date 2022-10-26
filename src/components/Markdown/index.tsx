@@ -16,10 +16,6 @@ export function Markdown({ textareaValue, setTextareaValue, item }: MarkdownProp
 
   }
 
-  // useEffect(() => {
-  //   localStorage.setItem("@textarea-value", (textareaValue))
-  // })
-
 
   return (
     <MarkdownContainer>
