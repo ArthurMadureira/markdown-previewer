@@ -10,10 +10,15 @@ interface MarkdownProps {
 export function Markdown({ textareaValue, setTextareaValue, item }: MarkdownProps) {
 
 
+  function handleChange(e: any) {
+    setTextareaValue(e.target.value)
+    localStorage.setItem("@textarea-value", (e.target.value))
 
-  useEffect(() => {
-    localStorage.setItem("@textarea-value", textareaValue)
-  })
+  }
+
+  // useEffect(() => {
+  //   localStorage.setItem("@textarea-value", (textareaValue))
+  // })
 
 
   return (
@@ -22,7 +27,7 @@ export function Markdown({ textareaValue, setTextareaValue, item }: MarkdownProp
         <h2>Markdown</h2>
       </MarkdownHeader>
 
-      <textarea onChange={(e) => setTextareaValue(e.target.value)} placeholder='Type your markdown code' >{item}</textarea>
+      <textarea onChange={(e) => handleChange(e)} placeholder='Type your markdown code' >{item}</textarea>
     </MarkdownContainer>
   )
 }

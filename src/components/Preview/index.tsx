@@ -19,7 +19,7 @@ export function Preview({ textareaValue }: PreviewProps) {
       <MarkdownBody>
         <div className="markdown-body">
 
-          <Markdown value={textareaValue} />
+          <Markdown value={localStorage.getItem("@textarea-value")} />
         </div>
       </MarkdownBody>
 
